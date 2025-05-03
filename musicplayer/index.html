@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibify</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="utility.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="navb">
+      <div class="ham" id="ham"> &#9776; </div>
+      <div class="logb">
+        <img src="logo.svg" alt="logo" class="logo" />
+        <h3>VIBIFY</h3>
+      </div>
+      <div id="searchPopup"
+        style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%); background:white; border:1px solid #ccc; padding:10px; z-index:1000; box-shadow:0 0 10px rgba(0,0,0,0.2); border-radius:8px;">
+        <h3>Search Results</h3>
+        <ul id="searchResults" style="list-style:none; padding:0; margin:0;"></ul>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="song-search" placeholder="Search songs..." />
+        <button id="search-btn">
+          <img src="search.svg" alt="Search" class="inver" width="20" />
+        </button>
+      </div>
+      <ul class="search-results"></ul>
+
+    </div>
+    <div class="btn">
+      <button>signup</button>
+      <button>login</button>
+    </div>
+
+  </nav>
+
+  <div class="layout">
+    <div class="mainbox">
+      <div class="side">
+        <div class="menu-card">
+          <button class="sidebar-btn">
+            <img src="home.svg" alt="home icon" class="icon" />
+            <span>Home</span>
+          </button>
+          <img src="close.svg" alt="arrow" class="close invert" id="close" />
+        </div>
+        <div class="menu-card">
+          <button class="sidebar-btn">
+            <img src="fav.svg" alt="fav icon" class="icon" />
+            <span>Favourites</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="side3">
+        <div class="p">
+          <img src="playlist.svg" alt="playlist" />
+          <h4>Your Playlist</h4>
+        </div>
+        <div class="pla">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidemain">
+      <div class="text">
+        <h2>Vibe your song With <h2 id="v">VIBIFY</h2>
+        </h2>
+      </div>
+      <h4>Popular Songs</h4>
+
+      <div class="songs">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://c.saavncdn.com/854/Premalo-From-Court-Telugu-2025-20250213103211-500x500.jpg"
+              alt="Album Art">
+            <button id="x1" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Premalo</h3>
+            <p class="artist">Anurag kulkarni</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e02699cce11792075219c61bb2f" alt="Album Art">
+            <button id="x2" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Sanam Teri Kasam</h3>
+            <p class="artist">Arijit Singh</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://c.saavncdn.com/162/ANIMAL-TELUGU-Telugu-2023-20231125141003-150x150.jpg" alt="Album Art">
+            <button id="x1" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Evarevaro</h3>
+            <p class="artist">Harsha vardhan</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e0283141000ee8ce3b893a0b425" alt="Album Art">
+            <button id="x5" class="play-btn">&#9654;</button>
+          </div>
+
+          <div class="card-info">
+            <h3 class="title">Finding Her</h3>
+            <p class="artist">Justin Bieber</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="Album Art">
+            <button id="x1" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Tum Hi Ho</h3>
+            <p class="artist">Arijit Singh</p>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef" alt="Album Art">
+            <button id="x3" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Rajhnah</h3>
+            <p class="artist">Arman Malik</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e02a5183fa4b99bcec1f506418d" alt="Album Art">
+            <button id="x4" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Young Goat</h3>
+            <p class="artist">Taylor swift</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="https://i.scdn.co/image/ab67616d00001e021018173246dd0936e562aa01" alt="Album Art">
+            <button id="x6" class="play-btn">&#9654;</button>
+          </div>
+          <div class="card-info">
+            <h3 class="title">Chal</h3>
+            <p class="artist">Justin Bieber</p>
+          </div>
+        </div>
+        <div class="nm">
+          <h4>explore Music</h4>
+          <div class="ri">
+            <img src="right.svg" alt="right arrow svg">
+          </div>
+        </div>
+        <!-- <div class="player-bar">
+          <div class="song-info">
+            <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="Album Art" class="album-art" />
+            <div class="song-details">
+              <h4 class="song-title">Tum Hi Ho</h4>
+              <p class="song-artist">Arijit Singh</p>
+            </div>
+          </div>
+        
+          <div class="player-center">
+            <div class="controls">
+              <img src="pre.svg" alt="Previous" class="control-btn pre invert" id="pr" />
+              <img src="playbutton.svg" alt="Play" class="control-btn play" />
+              <img src="next.svg" alt="Next" class="control-btn next invert"  id="nx"/>
+            </div>
+            <div class="progress">
+              <span class="current-time">1:23</span>
+              <input type="range" class="progress-bar" min="0" max="100" value="30" />
+              <span class="total-time">4:01</span>
+            </div>
+          </div>
+        
+          <div class="extra-controls">
+          </div>
+        </div> -->
+
+
+
+
+      </div>
+      <br>
+      <footer>
+        <div class="footer">
+          <div class="c1">
+            <h2 >Company</h2>
+            <h4 class="x" >About</h4>
+            <h4 class="x">Jobs</h4>
+          </div>
+          <div class="c2">
+            <h2>Communities</h2>
+            <h4 class="x">Artists</h4>
+            <h4 class="x">Developers</h4>
+            <h4 class="x">Advertising </h4>
+            <h4 class="x">Investors</h4>
+          </div>
+          <div class="c3">
+            <h2 >Use Full Links</h2>
+            <h4 class="x">Support</h4>
+            <h4 class="x">Web Player</h4>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

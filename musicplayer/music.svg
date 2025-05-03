@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 400" preserveAspectRatio="none">
+  <rect width="100%" height="100%" fill="#0e0e0e" />
+  
+  <!-- Single yellow soundwave line -->
+  <path fill="none" stroke="#FFD700" stroke-width="2" d="M0,200 Q180,100 360,200 T720,200 T1080,200 T1440,200" />
+</svg>
